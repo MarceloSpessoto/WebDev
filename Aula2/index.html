@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Exercício da Aula 1</title>
+	<style>
+		body{
+			background-color: lightblue;
+		}
+		h1{
+			background-color: rgb(216, 204, 204);
+			text-align: center;
+			margin: 5% 30%;
+			border-color: black;
+			border: solid;
+			border: 5px 5px;
+		}
+		h2{
+			background-color: rgb(216, 204, 204);
+			border:solid;
+			border-color: black;
+			border: 1px 1px;
+			margin: 0 85% 0 0;
+			padding: 0 0 0 3px;
+		}
+		h3{
+			font-size: 20px;
+			background-color: white;
+			padding: 3em;
+			border: solid;
+			border-color:black;
+		}
+		.Setor{
+			background-color: whitesmoke;
+			border-color: black;
+			border: solid;
+			margin: 5px 0;
+			padding: 0 3em;
+			font-size: 17px;
+		}
+		.TopicoAula{
+			list-style-type: none;
+			padding: 1em 3em;
+			margin: 1em 0 1em 0;
+			border: solid;
+			background-color: rgb(216, 204, 204);
+			font-size: 17px;
+		}
+		#LinkBox{
+			text-align: center;
+			padding: 10px 0 40px 0;
+		}
+		.TopicoLink{
+			float: left;
+			list-style-type: none;
+			margin: 0 100px;
+			padding: 5px;
+			border-radius: 30px;
+		}
+		.AnchorDeco{
+			background-color: red;
+			text-decoration: none;
+			color: black;
+			border: solid black;
+			padding: 5px;
+			border-radius: 30px;
+		}
+		.AnchorDeco:hover{
+			background-color: rgb(190, 10, 10);
+		}
+	</style>
+	</head>
+	<body>
+	<h1>Exercícios 1 e 2 do WebDev</h1>
+	<h2>Seções</h2>
+	<div class="Setor">
+		<ul id="LinkBox">
+			<li class="TopicoLink"><a class="AnchorDeco" href="#SobreMim">Sobre mim</a></li>
+			<li class="TopicoLink"><a class="AnchorDeco" href="#OQueAprendi">O que aprendi</a></li>
+			<li class="TopicoLink"><a class="AnchorDeco" href="#Aula1">Aula 1</a></li>
+			<li class="TopicoLink"><a class="AnchorDeco" href="#Aula2">Aula 2</a></li>
+		</ul>
+	</div>
+	<h2 id="SobreMim">Sobre mim</h2>
+	<div class="Setor">
+		<p>Meu nome é Marcelo, tenho 19 anos, sou da capital paulista e estou no terceiro semestre do BCC. Não tenho experiência com desenvolvimento Web, mas é uma área que me parece interessante e gostaria de conhecer melhor.</p>
+	</div>
+	<h2 id="OQueAprendi">O que aprendi</h2>
+	<div class="Setor">
+		<ul>
+			<div class="TopicoAula">
+				<li>
+				<h3 id="Aula1">Aula 1 - Introdução ao HTML e desenvolvimento Web:</h3>
+				<p>Foram apresentados os seguintes tópicos:</p>
+				<ol>
+					<li>Conceito de desenvolvimento Web:
+						<ul>
+							<li>Web x Internet;</li>
+							<li>Linguagens(não necessariamente de programação) relacionadas ao desenvolvimento web: HTML, CSS, JS</li>
+						</ul>
+					</li>
+					<li>Introdução ao HTML:
+						<ul>
+							<li>Características básicas de HTML</li>
+							<li>Estruturação de código HTML e analogia com árvores</li>
+							<li>Apresentação de tags fundamentais</li>
+							<li>Atributos de tags e tags autocontidas</li>
+						</ul>
+					</li>
+					<li>
+						Introdução a conceitos básicos de git.
+					</li>
+				</ol>
+				</li>
+			</div>
+			<div class="TopicoAula">
+				<li>
+				<h3 id="Aula2"> Aula 2 - CSS:</h3>
+				<p>Foram apresentados os seguintes tópicos:</p>
+				<ol>
+					<li>Introdução ao CSS:
+					<ul>
+						<li>"Cascading Style Sheet"</li>
+						<li>Uso para estilização</li>
+						<li>Conceito de Herança</li>
+						<li>Uso de seletores para estilizar página:
+							<ol>
+								<li>Tag (Menor prioridade)</li>
+								<li>Classe</li>
+								<li>ID (Maior prioridade)</li>
+							</ol>
+						</li>
+						<li>Tipos de estilização:
+							<ul>
+								<li>Interna (Usada para estilizar essa página)</li>
+								<li>Externa </li>
+							</ul>
+						</li>
+						<li>Box Model ("Caixas que compõem a página")
+							<ul>
+								<li>
+									Caixas compostas por:
+									<ul>
+										<li>Conteúdo</li>
+										<li>Preenchimento (Padding)</li>
+										<li>Borda </li>
+										<li>Margem</li>
+									</ul>
+								</li>
+								<li>
+									Unidades de medida:
+									<ul>
+										<li>pixels (px)</li>
+										<li>largura do char "m" na fonte atual (em)</li>
+										<li>largura do char "m" na fonte original (rem)</li>
+										<li>1/100 da altura e largura do viewport (vh e vw)</li>
+										<li>medida relativa (%)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					</li>
+				</ol>
+				</li>
+			</div>
+		</ul>
+	</div>
+	</body>
+</html>
