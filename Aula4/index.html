@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Exercício da Aula 1</title>
+	<style>
+		li {list-style-type: none;}
+		ul {list-style-type: none;}
+		h4{
+			display: flex;
+			justify-content: space-evenly;
+			background-color: rgb(230, 230, 230);
+			padding:10px 0;
+			position: sticky;
+			top: 0;
+			border-radius: 8px;
+			z-index: 2;
+		}	
+		h4 a {
+			background-color: red;
+			padding: 10px;
+			font-family: Monospace;
+			border-radius: 8px;
+			color: white;
+			text-decoration: none;
+		}
+		h4 a:hover{
+			animation: changeColor 3s ease-in-out infinite;
+		}
+		@keyframes changeColor{
+			20%{background-color: rgb(16, 163, 16);}
+			40%{background-color: rgb(83, 83, 247);}
+			60%{background-color: rgb(128, 23, 226);}
+			80%{background-color: rgb(201, 201, 20);}
+			90%{background-color: rgb(255, 166, 0);}
+			100%{background-color: red;}
+		}
+		.Setor{
+			font-family: 'Courier New', Courier, monospace;
+			background-color: rgb(248, 248, 248);
+			border-radius: 16px;
+			font-size: 15px;
+			margin: 2px;
+		}
+		.Aprendeu{
+			display: flex;
+		}
+		#HTML{
+			position: relative;
+			bottom: 25px;
+			left:20px;
+		}
+		#CSS{
+			position: relative;
+			left: 410px;
+			top: 50px;
+		}
+		#OQueAprendi{font-family: 'Courier New', Courier, monospace;}
+	</style>
+	</head>
+	<body>
+	<h4>
+		<a href="#SobreMim">Sobre mim</a>
+		<a href="#OQueAprendi">O que aprendi</a>
+		<a href="#Aula1">Aula 1</a>
+		<a href="#Aula2">Aula 2</a>
+	</h4>
+	<div class="Setor">
+		<h2 id="SobreMim">Sobre mim</h2>
+		<p>Meu nome é Marcelo, tenho 19 anos, sou da capital paulista e estou no terceiro semestre do BCC. Não tenho experiência com desenvolvimento Web, mas é uma área que me parece interessante e gostaria de conhecer melhor.</p>
+	</div>
+	<div>
+		<h2 id="OQueAprendi">O que aprendi</h2>
+		<div class="Setor">
+			<h3 id="Aula1">Aula 1 - Introdução ao HTML e desenvolvimento Web:</h3>
+			<p>Foram apresentados os seguintes tópicos:</p>
+			<div class="Aprendeu">
+				<ol>
+					<li>Conceito de desenvolvimento Web:
+						<ul>
+							<li>Web x Internet;</li>
+							<li>Linguagens(não necessariamente de programação) relacionadas ao desenvolvimento web: HTML, CSS, JS</li>
+						</ul>
+					</li>
+					<li>Introdução ao HTML:
+						<ul>
+							<li>Características básicas de HTML</li>
+							<li>Estruturação de código HTML e analogia com árvores</li>
+							<li>Apresentação de tags fundamentais</li>
+							<li>Atributos de tags e tags autocontidas</li>
+						</ul>
+					</li>
+					<li>
+						Introdução a conceitos básicos de git.
+					</li>
+				</ol>
+				<img id = "HTML" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png", width="250", height="250"/>
+			</div>	
+		</div>
+		<div class="Setor">
+			<h3 id="Aula2"> Aula 2 - CSS:</h3>
+			<p>Foram apresentados os seguintes tópicos:</p>
+			<div class="Aprendeu">
+				<ol>
+					<li>Introdução ao CSS:
+					<ul>
+						<li>"Cascading Style Sheet"</li>
+						<li>Uso para estilização</li>
+						<li>Conceito de Herança</li>
+						<li>Uso de seletores para estilizar página:
+							<ol>
+								<li>Tag (Menor prioridade)</li>
+								<li>Classe</li>
+								<li>ID (Maior prioridade)</li>
+							</ol>
+						</li>
+						<li>Tipos de estilização:
+							<ul>
+								<li>Interna (Usada para estilizar essa página)</li>
+								<li>Externa </li>
+							</ul>
+						</li>
+						<li>Box Model ("Caixas que compõem a página")
+							<ul>
+								<li>
+									Caixas compostas por:
+									<ul>
+										<li>Conteúdo</li>
+										<li>Preenchimento (Padding)</li>
+										<li>Borda </li>
+										<li>Margem</li>
+									</ul>
+								</li>
+								<li>
+									Unidades de medida:
+									<ul>
+										<li>pixels (px)</li>
+										<li>largura do char "m" na fonte atual (em)</li>
+										<li>largura do char "m" na fonte original (rem)</li>
+										<li>1/100 da altura e largura do viewport (vh e vw)</li>
+										<li>medida relativa (%)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					</li>
+				</ol>
+				<img id="CSS" src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="200", height="300"/>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
