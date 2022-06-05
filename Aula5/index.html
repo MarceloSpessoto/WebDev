@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Exercício da Aula 1</title>
+	<title>Exercício da Aula 5</title>
 	<style>
 		#MainBox{
 			height: 150vh;
@@ -74,6 +74,7 @@
 				display: none;
 			}
 			#MainBox{
+				height: 60vh;
 				display: block;
 			}
 			#Lateral{
@@ -96,7 +97,6 @@
 			}
 		}
 		#Bola{
-			background-color: black;
 			border-radius: 50%;
 			margin: 50px;
 			height: 150px;
@@ -112,15 +112,22 @@
 				transform: translateY(0);
 			}
 		}
+		button {
+			color: white;
+			border-radius: 8px;
+			background: rgb(128, 23, 226);
+			border: none;
+		}
 	</style>
 	</head>
 	<body>
+	<script src="dark.js"></script>
 	<h4>
 		<a href="#SobreMim">Sobre mim</a>
 		<a href="#OQueAprendi">O que aprendi</a>
 		<a href="#Aula1">Aula 1</a>
 		<a href="#Aula2">Aula 2</a>
-		<button onclick="night()">Night Mode</button>
+		<button onclick="darkMode()">Dark Mode</button>
 	</h4>
 	<div id="MainBox">
 		<div id="Main Content">
