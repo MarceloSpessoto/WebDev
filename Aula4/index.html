@@ -4,12 +4,19 @@
 	<title>Exercício da Aula 1</title>
 	<style>
 		#MainBox{
+			height: 150vh;
 			display: flex;
+		}
+		#MainContent{
+			height: 100%;
+			background-color: bisque;
+			justify-content: space-between;
 		}
 		#Lateral{
 			text-align: center;
 			background-color: rgb(248, 248, 248);
 			border-radius: 8px;
+			height: 100%;
 		}
 		li {list-style-type: none;}
 		ul {list-style-type: none;}
@@ -62,12 +69,17 @@
 			top: 50px;
 		}
 		#OQueAprendi{font-family: 'Courier New', Courier, monospace;}
-		@media (max-width: 768px){
+		@media (max-width: 1279px){
 			#CSS{
 				display: none;
 			}
 			#MainBox{
 				display: block;
+			}
+			#Lateral{
+				display: flex;
+				justify-content: center;
+				align-content: center;
 			}
 		}
 		@media (max-width: 590px){
@@ -76,6 +88,28 @@
 			}
 			#Lateral{
 				display: none;
+			}
+		}	
+		@media (min-width: 1280px){
+			#Bola{
+				animation: movBola 3s infinite ease-in-out;
+			}
+		}
+		#Bola{
+			background-color: black;
+			border-radius: 50%;
+			margin: 50px;
+			height: 150px;
+			width: 150px;
+			position: relative;
+			background: radial-gradient(circle at 50px 50px, red, #000);
+		}
+		@keyframes movBola{
+			50%{
+				transform: translateY(110vh);
+			}
+			100%{
+				transform: translateY(0);
 			}
 		}
 	</style>
@@ -176,7 +210,7 @@
 			</div>
 		</div>
 		<div id="Lateral">
-			<h3>Área vazia e sem sentido</h3>
+			<div id="Bola"></div>
 		</div>
 	</div>
 	</body>
